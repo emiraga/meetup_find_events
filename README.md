@@ -36,6 +36,10 @@ First install terminal-notifier
 
     brew install terminal-notifier 
 
+To edit your crontab file just do
+
+    crontab -e
+
 Add a line to cron:
 
     1 * * * * /path/to/meetup_find_events.php --rsvp_limit 65 --days 30 --notification

@@ -31,6 +31,15 @@ $config_group_name_blacklist = array(
   'kick-ass-group',
   'gay-social-san-francisco',
   'femtalks',
+  'MFinvestingMeetup',
+  'sfedtech',
+  'Recruiters-Helping-Recruiters-SF-Bay-Area',
+  'sfgirlbosses',
+  'EB-REI',
+  'San-Francisco-Women-in-Data',
+  'Bay-Area-Women-in-Sales',
+  'Zen-SF',
+  'Asians-and-Friends-San-Francisco-Bay',
 );
 
 $config_spammers = array(
@@ -66,6 +75,7 @@ $config_debug_event_url = 'https://www.meetup.com/ReactJS-San-Francisco/events/2
 
 $config_skip_event_urls = array(
   'https://www.meetup.com/Bay-Area-Hike-On/events/256284677/',
+  'https://www.meetup.com/BeerAndUX/events/258075440/',
 );
 
 // TODO(emir): always display events from groups:

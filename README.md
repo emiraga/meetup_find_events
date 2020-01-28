@@ -2,31 +2,23 @@
 
 Find interesting meetup events in your area, get notified when events get popular.
 
-# Initialization
+# PHP
 
-After cloning, run this script with
+Deprecated because meetup changed its policies on APIs.
 
-    php meetup_find_events.php
+# python
 
-and it will ask you to configure user ID and access key.
+Works in combination with the browser.
 
-When you see a list of events, the setup is complete.
+Needs this piece of javascript in the browser
 
-# Usage from command line
+    JSONFormatter.objectToHTML = (response_object) => {
+      navigator.clipboard.writeText(JSON.stringify(response_object));
+      return 'clipboard';
+    }
 
-You can just run it with `php meetup_find_events.php` in command line, pass in `--help` to change settings.
+In order to copy the contents of response back to python script.
 
-Read the output from TOP to bottom, it shows which events it skipped (`--verbose`), it lists most interesting ones on the TOP of output.
-
-I can Command+click the URL in terminal to open any event.
-
-# Blacklist configuration
-
-You will have to edit the source code (sorry, I was too lazy to make a proper config file).
-
-Modify global arrays `$config_group_name_blacklist`, `$config_spammers`, `$config_event_name_blacklist`
-
-I recommend running this script from command line in your zipcode for `--days 90`, until you are happy that you filtered out spammers and groups that you don't care about.
 
 # Use from cron (for Mac OS X)
 

@@ -20,7 +20,7 @@ Needs this piece of javascript in the browser
 In order to copy the contents of response back to python script.
 
 
-# Use from cron (for Mac OS X)
+# Deprecated: Use from cron (for Mac OS X)
 
 This will send you notifications about meetup events every hour until you either RSVP "yes", or you RSVP "no", or you somehow blacklist particular group or event.
 
